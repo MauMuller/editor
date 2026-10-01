@@ -1,0 +1,110 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "space t n": "workspace::NewFile",
+      "space e": "project_panel::Toggle",
+      "ctrl-w": null,
+    },
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "alt-right": "pane::ActivateNextItem",
+      "alt-left": "pane::ActivatePreviousItem",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == normal && !menu",
+    "bindings": {
+      "alt-shift-left": "pane::SwapItemLeft",
+      "alt-shift-right": "pane::SwapItemRight",
+    },
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "ctrl-a": "project_panel::NewFile",
+      "ctrl-shift-a": "project_panel::NewDirectory",
+      "ctrl-r": "project_panel::Rename",
+      "ctrl-d": "project_panel::Delete",
+      "ctrl-y": "project_panel::Copy",
+      "ctrl-x": "project_panel::Cut",
+      "ctrl-p": "project_panel::Paste",
+    },
+  },
+  {
+    "context": "vim_mode == normal",
+    "bindings": {
+      "space f f": "file_finder::Toggle",
+      "space f g": "text_finder::Toggle",
+    },
+  },
+  {
+    "context": "Dock",
+    "bindings": {
+      "ctrl-w left": "workspace::ActivatePaneLeft",
+      "ctrl-w right": "workspace::ActivatePaneRight",
+      "ctrl-w up": "workspace::ActivatePaneUp",
+      "ctrl-w down": "workspace::ActivatePaneDown",
+    },
+  },
+  {
+    "bindings": {
+      "space '": "terminal_panel::Toggle",
+    },
+  },
+
+  // Unbinds
+  {
+    "unbind": {
+      "ctrl-q": "zed::Quit",
+    },
+  },
+  {
+    "context": "!SettingsWindow",
+    "unbind": {
+      "ctrl-,": "zed::OpenSettings",
+    },
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "unbind": {
+      "p": "project_panel::Open",
+    },
+  },
+  {
+    "context": "VimControl && !menu",
+    "unbind": {
+      "ctrl-o": "pane::GoBack",
+    },
+  },
+  {
+    "context": "VimControl && !menu",
+    "unbind": {
+      "ctrl-i": "pane::GoForward",
+    },
+  },
+  {
+    "unbind": {
+      "ctrl-alt-,": "zed::OpenSettingsFile",
+    },
+  },
+  {
+    "context": "Terminal",
+    "unbind": {
+      "ctrl-shift-space": "terminal::ToggleViMode",
+    },
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-`": "terminal_panel::Toggle",
+    },
+  },
+  {
+    "unbind": {
+      "ctrl-o": "workspace::OpenFiles",
+    },
+  },
+]

@@ -1,0 +1,81 @@
+{
+  "git_panel": {
+    "button": false
+  },
+  "base_keymap": "VSCode",
+  "minimap": {
+    "thumb_border": "right_open",
+    "show": "always",
+  },
+  "outline_panel": {
+    "button": false,
+  },
+  "collaboration_panel": {
+    "button": false,
+  },
+  "format_on_save": "on",
+  "text_rendering_mode": "platform_default",
+  "agent_ui_font_family": "Fira Code",
+  "search": {
+    "button": false,
+    "regex": true,
+  },
+  "project_panel": {
+    "dock": "left",
+    "entry_spacing": "comfortable",
+    "default_width": 240.0,
+  },
+  "proxy": "",
+  "disable_ai": true,
+  "auto_update": false,
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+    "anthropic_retention": false,
+  },
+  "cli_default_open_behavior": "existing_window",
+  "vim_mode": true,
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Base Charmed Icons",
+    "dark": "Base Charmed Icons"
+  },
+  "ui_font_size": 16,
+  "buffer_font_family": "Fira Code",
+  "buffer_font_features": {
+    "calt": true,
+  },
+  "buffer_font_size": 15,
+  "diagnostics": {
+    "inline": {
+      "enabled": true,
+    },
+  },
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Rosé Pine",
+  },
+  "title_bar": {
+    "show_sign_in": false,
+  },
+  "tab_bar": {
+    "show_nav_history_buttons": false,
+    "show_tab_bar_buttons": false,
+  },
+  "toolbar": {
+    "breadcrumbs": true,
+    "quick_actions": false,
+    "agent_review": false,
+    "selections_menu": false,
+    "code_actions": false,
+  },
+  "cursor_shape": "bar",
+  "theme_overrides": {
+    "Aura Dark": {
+      "editor.background": "#000",
+      "editor.gutter.background": "#000",
+      "border.variant": "#000",
+    },
+  },
+}
