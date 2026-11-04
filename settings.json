@@ -1,6 +1,10 @@
 {
   "git_panel": {
-    "button": false
+    "button": false,
+  },
+  "which_key": {
+    "enabled": true,
+    "delay_ms": 200,
   },
   "base_keymap": "VSCode",
   "minimap": {
@@ -71,6 +75,9 @@
     "code_actions": false,
   },
   "cursor_shape": "bar",
+  "inlay_hints": {
+    "enabled": true,
+  },
   "theme_overrides": {
     "Aura Dark": {
       "editor.background": "#000",
