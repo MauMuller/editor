@@ -1,6 +1,6 @@
 [
   {
-    "context": "Workspace",
+    "context": "Workspace && vim_mode == normal",
     "bindings": {
       "space t n": "workspace::NewFile",
       "space e": "project_panel::Toggle",
@@ -31,13 +31,21 @@
       "ctrl-y": "project_panel::Copy",
       "ctrl-x": "project_panel::Cut",
       "ctrl-p": "project_panel::Paste",
+      "space e": "project_panel::Toggle",
     },
   },
   {
     "context": "vim_mode == normal",
     "bindings": {
+      "space l k": "editor::Hover",
+      "space l ç": "editor::GoToDefinition",
+      "space l d": "editor::GoToDiagnostic",
+      "ctrl-'": "terminal_panel::ToggleFocus",
       "space f f": "file_finder::Toggle",
       "space f g": "text_finder::Toggle",
+      "space e": "project_panel::ToggleFocus",
+      "space b t": "workspace::NewFile",
+      "space b q": "pane::CloseActiveItem",
     },
   },
   {
@@ -50,8 +58,17 @@
     },
   },
   {
+    "context": "Terminal",
     "bindings": {
-      "space '": "terminal_panel::Toggle",
+      "ctrl-'": "terminal_panel::Toggle",
+      "ctrl-t": ["terminal::SendKeystroke", "ctrl-t"],
+      "ctrl-g": ["terminal::SendKeystroke", "ctrl-g"],
+      "ctrl-p": ["terminal::SendKeystroke", "ctrl-p"],
+      "ctrl-n": ["terminal::SendKeystroke", "ctrl-n"],
+      "ctrl-s": ["terminal::SendKeystroke", "ctrl-s"],
+      "ctrl-o": ["terminal::SendKeystroke", "ctrl-o"],
+      "alt-right": ["terminal::SendKeystroke", "alt-right"],
+      "alt-left": ["terminal::SendKeystroke", "alt-left"],
     },
   },
 
