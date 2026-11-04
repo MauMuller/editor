@@ -78,6 +78,11 @@
   "inlay_hints": {
     "enabled": true,
   },
+  "terminal": {
+    "shell": {
+      "program": "codemux",
+    },
+  },
   "theme_overrides": {
     "Aura Dark": {
       "editor.background": "#000",
